@@ -3,7 +3,7 @@ function App() {
   let the = '0812';
   return (
    <h1>
-      NotesProject.org the {the}
+      NotesProject.org, {the}
    </h1>
   );
 }
