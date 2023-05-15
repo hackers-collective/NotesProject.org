@@ -27,7 +27,7 @@ function App() {
       CUT THE SHIT <span style={out}>OUT</span>
       </h1>
       <h2 style={NP}>
-      NotesProject.org
+      NotesProject.org, Engineered by HC
       </h2>
     </div>
    
