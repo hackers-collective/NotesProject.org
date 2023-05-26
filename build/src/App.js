@@ -7,8 +7,9 @@ const containerStyle = {
   alignItems: 'center',
   justifyContent: 'center',
   minHeight: '100vh',
-  backgroundColor: '#f5f5f5',
-  padding: '20px'
+  backgroundColor: 'transparent',
+  padding: '20px',
+  margin: '0'
 };
 
 const bannerStyle = {
