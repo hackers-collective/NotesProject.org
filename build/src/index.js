@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Switch as RouterSwitch } from 'react-router'; // Import Switch from react-router
-
 import App from './App';
 
 const NotFound = () => (
@@ -15,10 +13,10 @@ const NotFound = () => (
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <RouterSwitch>
+      <Switch>
         <Route exact path="/" component={App} />
         <Route component={NotFound} />
-      </RouterSwitch>
+      </Switch>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
