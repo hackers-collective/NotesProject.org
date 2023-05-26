@@ -7,21 +7,26 @@ const containerStyle = {
   alignItems: 'center',
   justifyContent: 'center',
   height: '100vh',
-  backgroundColor: '#f5f5f5'
+  backgroundColor: '#f5f5f5',
+  padding: '20px'
 };
 
 const bannerStyle = {
   fontFamily: 'Lexend Deca',
   fontSize: '120px',
   color: 'black',
-  marginBottom: '20px'
+  marginBottom: '20px',
+  textAlign: 'center',
+  margin: '0'
 };
 
 const subTitleStyle = {
   fontFamily: 'Lexend Deca',
-  fontSize: '24px',
+  fontSize: '36px',
   color: '#555555',
-  marginBottom: '40px'
+  marginBottom: '40px',
+  textAlign: 'center',
+  margin: '0'
 };
 
 function App() {
