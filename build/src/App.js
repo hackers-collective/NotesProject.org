@@ -18,7 +18,8 @@ const bannerStyle = {
 };
 
 const subTitleStyle = {
-  fontSize: '36px',
+  fontFamily: 'Lexend Deca',
+  fontSize: '24px',
   color: '#555555',
   marginBottom: '40px'
 };
