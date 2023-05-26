@@ -1,33 +1,51 @@
 import React from 'react';
 import './App.css';
 
-const font = {
+const containerStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  height: '100vh',
+  backgroundColor: '#f5f5f5'
+};
+
+const bannerStyle = {
+  fontFamily: 'Lexend Deca',
+  fontSize: '48px',
+  fontWeight: 'bold',
   color: 'black',
-  fontFamily: 'Lexend Deca'
+  marginBottom: '20px'
 };
 
-const banner = {
-  fontSize: '120px'
+const subTitleStyle = {
+  fontSize: '24px',
+  color: '#555555',
+  marginBottom: '40px'
 };
 
-const out = {
-  color: "#2222FF",
-  fontSize: '120px'
-};
-
-const NP = {
-  padding: "25px 50px 75px 100px"
+const NPStyle = {
+  fontFamily: 'Arial',
+  fontSize: '18px',
+  color: '#333333',
+  padding: '10px',
+  border: '1px solid #dddddd',
+  borderRadius: '5px',
+  backgroundColor: '#ffffff'
 };
 
 function App() {
   return (
-    <div style={font}>
-      <h1 style={banner}>
-        CUT THE SHIT <span style={out}>OUT</span>
+    <div style={containerStyle}>
+      <h1 style={bannerStyle}>
+        CUT THE SHIT <span style={{ color: '#2222FF' }}>OUT</span>
       </h1>
-      <h2 style={NP}>
+      <h2 style={subTitleStyle}>
         NotesProject.org, Engineered by HC
       </h2>
+      <div style={NPStyle}>
+        Welcome to NotesProject.org! This is a platform engineered by HC to help you manage your notes effectively.
+      </div>
     </div>
   );
 }
