@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import App from './App';
 
 const NotFound = () => (
@@ -13,10 +13,9 @@ const NotFound = () => (
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Switch>
-        <Route exact path="/" component={App} />
-        <Route component={NotFound} />
-      </Switch>
+      <Route exact path="/" component={App} />
+      <Route path="/404" component={NotFound} />
+      <Redirect to="/404" />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
