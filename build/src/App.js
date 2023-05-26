@@ -12,26 +12,15 @@ const containerStyle = {
 
 const bannerStyle = {
   fontFamily: 'Lexend Deca',
-  fontSize: '48px',
-  fontWeight: 'bold',
+  fontSize: '120px',
   color: 'black',
   marginBottom: '20px'
 };
 
 const subTitleStyle = {
-  fontSize: '24px',
+  fontSize: '36px',
   color: '#555555',
   marginBottom: '40px'
-};
-
-const NPStyle = {
-  fontFamily: 'Arial',
-  fontSize: '18px',
-  color: '#333333',
-  padding: '10px',
-  border: '1px solid #dddddd',
-  borderRadius: '5px',
-  backgroundColor: '#ffffff'
 };
 
 function App() {
@@ -43,9 +32,6 @@ function App() {
       <h2 style={subTitleStyle}>
         NotesProject.org, Engineered by HC
       </h2>
-      <div style={NPStyle}>
-        Welcome to NotesProject.org! This is a platform engineered by HC to help you manage your notes effectively.
-      </div>
     </div>
   );
 }
