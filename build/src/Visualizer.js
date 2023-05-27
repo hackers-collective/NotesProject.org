@@ -20,8 +20,10 @@ const headingStyle = {
 
 const gridContainerStyle = {
   display: 'grid',
-  gridTemplateColumns: 'repeat(10, 1fr)',
+  gridTemplateColumns: 'repeat(auto-fit, minmax(80px, 1fr))', // Responsive grid columns
   gridGap: '10px',
+  maxWidth: '800px', // Limit the maximum width of the grid
+  width: '100%', // Ensure the grid takes up the full width of the container
 };
 
 const gridItemStyle = {
@@ -30,9 +32,17 @@ const gridItemStyle = {
   justifyContent: 'center',
   backgroundColor: '#f1f1f1',
   color: '#333333',
-  height: '80px',
-  width: '80px',
-  fontFamily: 'Lexend Deca', // Set the font family to 'Lexend Deca'
+  paddingTop: '100%', // Maintain the square shape of the grid items
+  position: 'relative',
+  fontFamily: 'Lexend Deca',
+  fontSize: '16px', // Adjust font size for better readability on mobile devices
+};
+
+const gridItemContentStyle = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
 };
 
 function Visualizer() {
@@ -41,7 +51,7 @@ function Visualizer() {
     for (let i = 0; i < 100; i++) {
       grids.push(
         <div key={i} style={gridItemStyle}>
-          {i + 1000}
+          <div style={gridItemContentStyle}>{i + 1000}</div>
         </div>
       );
     }
