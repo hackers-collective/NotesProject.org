@@ -57,7 +57,9 @@ function Visualizer() {
 
   return (
     <div style={containerStyle}>
-      <h2 style={headingStyle}>Memory Visualization</h2>
+      <h2 style={headingStyle}>
+        Memory <span style={{ color: '#2222FF' }}>Visualization</span>
+        </h2>
       <div style={gridContainerStyle}>{renderMemoryGrid()}</div>
     </div>
   );
