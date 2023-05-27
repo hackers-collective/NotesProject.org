@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import App from './App';
+import Visualizer from './Visualizer';
 
 const NotFound = () => (
   <div>
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/home" element={<App />} />
+        <Route path="/visualizer" element={<Visualizer />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
