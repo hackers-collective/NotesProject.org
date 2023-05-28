@@ -4,10 +4,45 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import App from './App';
 import Visualizer from './Visualizer';
 
+const containerStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  minHeight: '100vh',
+  backgroundColor: 'transparent',
+  padding: '20px',
+  margin: '0 auto',
+  maxWidth: '600px', // Set a maximum width for better mobile responsiveness
+};
+
+const bannerStyle = {
+  fontFamily: 'Lexend Deca',
+  fontSize: '48px', // Decreased the font size for mobile devices
+  color: 'black',
+  marginBottom: '20px',
+  textAlign: 'center',
+  margin: '0',
+};
+
+const subTitleStyle = {
+  fontFamily: 'Lexend Deca',
+  fontSize: '24px', // Decreased the font size for mobile devices
+  color: '#555555',
+  marginBottom: '40px',
+  textAlign: 'center',
+  margin: '0',
+};
+
 const NotFound = () => (
-  <div>
-    <h1>404 - Page Not Found</h1>
-    <p>The requested page does not exist.</p>
+  <div style={containerStyle}>
+    <h1 style={bannerStyle}>
+    <span style={{ color: '#2222FF' }}>404 </span>
+     - Page Not Found
+    </h1>
+    <p style={subTitleStyle}>
+      The requested page does not exist.
+    </p>
   </div>
 );
 
