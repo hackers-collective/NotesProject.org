@@ -14,6 +14,7 @@ const containerStyle = {
   padding: '20px',
   margin: '0 auto',
   maxWidth: '600px', // Set a maximum width for better mobile responsiveness
+  boxSizing: 'border-box'
 };
 
 const bannerStyle = {
