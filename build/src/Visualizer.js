@@ -14,7 +14,8 @@ const containerStyle = {
 const headingStyle = {
   fontFamily: 'Lexend Deca',
   fontSize: '36px',
-  color: '#555555',
+  fontWeight: '600',
+  color: '#000022',
   marginBottom: '20px',
 };
 

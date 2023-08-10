@@ -15,6 +15,7 @@ const containerStyle = {
 const bannerStyle = {
   fontFamily: 'Lexend Deca',
   fontSize: '120px',
+  fontWeight: '500',
   color: '#000022',
   marginBottom: '20px',
   textAlign: 'center',
@@ -24,6 +25,7 @@ const bannerStyle = {
 const subTitleStyle = {
   fontFamily: 'Lexend Deca',
   fontSize: '36px',
+  fontWeight: '400',
   color: '#555555',
   marginBottom: '40px',
   textAlign: 'center',

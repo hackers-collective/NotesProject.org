@@ -20,6 +20,7 @@ const containerStyle = {
 const bannerStyle = {
   fontFamily: 'Lexend Deca',
   fontSize: '48px', // Decreased the font size for mobile devices
+  fontWeight: '500',
   color: '#000022',
   marginBottom: '20px',
   textAlign: 'center',
