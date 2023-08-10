@@ -15,7 +15,7 @@ const containerStyle = {
 const bannerStyle = {
   fontFamily: 'Lexend Deca',
   fontSize: '120px',
-  color: 'black',
+  color: '#000022',
   marginBottom: '20px',
   textAlign: 'center',
   margin: '0'
