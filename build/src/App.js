@@ -34,10 +34,10 @@ function App() {
   return (
     <div style={containerStyle}>
       <h1 style={bannerStyle}>
-        CUT THE SHIT <span style={{ color: '#2222FF' }}>OUT</span>
+        Notes<span style={{ color: '#2222FF' }}>Project</span>
       </h1>
       <h2 style={subTitleStyle}>
-        NotesProject.org, Engineered by HC
+        For Researchers & Engineers
       </h2>
     </div>
   );
