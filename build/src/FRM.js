@@ -15,10 +15,8 @@ export default function Transactions() {
     <h1 key={txn.id}
       style={
         {
-          color: txn.isOTP ? 'red' : 'darkgreen'
-        } 
-        {
-          fontStyle: txn.isOTP? 'italic' : ''
+          color: txn.isOTP ? 'red' : 'darkgreen',
+          fontStyle: txn.isOTP ? 'italic' : ''
         }
       }
     >
