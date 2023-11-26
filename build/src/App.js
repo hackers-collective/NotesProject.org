@@ -32,12 +32,21 @@ const subTitleStyle = {
   margin: '0'
 };
 
+function NPBrand() {
+  return (
+    <h1 style={bannerStyle}>
+      Notes<span style={{ color: '#2222FF' }}>Project</span>
+    </h1>
+  );
+}
+
 function App() {
   return (
     <div style={containerStyle}>
-      <h1 style={bannerStyle}>
-        Notes<span style={{ color: '#2222FF' }}>Project</span>
-      </h1>
+      // <h1 style={bannerStyle}>
+      //   Notes<span style={{ color: '#2222FF' }}>Project</span>
+      // </h1>
+      <NPBrand />
       <h2 style={subTitleStyle}>
         For Researchers & Engineers
       </h2>
