@@ -16,7 +16,7 @@ export default function Transactions() {
       style={
         {
           color: txn.isOTP ? 'red' : 'darkgreen'
-        }, 
+        } 
         {
           fontStyle: txn.isOTP? 'italic' : ''
         }
