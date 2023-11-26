@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import App from './App';
 import Visualizer from './Visualizer';
+import FRM from './FRM';
 
 const containerStyle = {
   display: 'flex',
@@ -55,6 +56,7 @@ ReactDOM.render(
         <Route path="/" element={<App />} />
         <Route path="/home" element={<App />} />
         <Route path="/visualizer" element={<Visualizer />} />
+        <Route path="/frm" element={<FRM />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
