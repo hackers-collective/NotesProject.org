@@ -44,7 +44,7 @@ function App() {
   return (
     <div style={containerStyle}>
       <NPBrand />
-      <NPBrand />
+      { /* <NPBrand */ }
       <h2 style={subTitleStyle}>
         For Researchers & Engineers
       </h2>
