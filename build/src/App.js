@@ -43,9 +43,6 @@ function NPBrand() {
 function App() {
   return (
     <div style={containerStyle}>
-      // <h1 style={bannerStyle}>
-      //   Notes<span style={{ color: '#2222FF' }}>Project</span>
-      // </h1>
       <NPBrand />
       <h2 style={subTitleStyle}>
         For Researchers & Engineers
